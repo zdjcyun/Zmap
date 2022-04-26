@@ -1,0 +1,18 @@
+/* 覆盖原生Cesium查询控件的样式 start */
+
+.cesium-widget-credits {
+    display: none !important;
+}
+.cesium-infoBox{
+    right: 60px !important;
+}
+
+.cesium-viewer-geocoderContainer{
+    z-index: 10;
+}
+.cesium-geocoder-searchButton{
+    padding: 10px;
+}
+/* 覆盖原生Cesium查询控件的样式 end */
+
+

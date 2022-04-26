@@ -1,0 +1,218 @@
+/**
+ * zgis 全局样式
+ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background-color: #fff;
+    line-height: 1.5;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*background-color: #999;*/
+    border-radius: 3px;
+}
+
+:hover::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);*/
+    border-radius: 3px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa;
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -ms-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+
+    -moz-transition: color .4s ease 0.5s;
+    -webkit-transition: color .4s ease 0.5s;
+    -ms-transition: color .4s ease 0.5s;
+    -o-transition: color .4s ease 0.5s;
+    transition: color .4s ease 0.5s;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.zgis-tst {
+    -moz-transition: all .4s ease 0.5s;
+    -webkit-transition: all .4s ease 0.5s;
+    -ms-transition: all .4s ease 0.5s;
+    -o-transition: all .4s ease 0.5s;
+    transition: all .4s ease 0.5s;
+}
+
+form,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+tr,
+th,
+td,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+label {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+label.label-block {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+
+.div-transition {
+    -moz-transition: ease-out 0.5s;
+    -o-transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -ms-transition: ease-out 0.5s;
+    transition: ease-out 0.5s;
+}
+
+/*加载等待动画*/
+
+.zgis-loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.zgis-loading .zgis-spinner1 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 49%;
+    left: 49%;
+}
+
+.zgis-loading .zgis-double-bounce1,
+.zgis-double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: zgis-bounce 2.0s infinite ease-in-out;
+    animation: zgis-bounce 2.0s infinite ease-in-out;
+}
+
+.zgis-loading .zgis-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes zgis-bounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes zgis-bounce {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/*加载等待动画 结束*/

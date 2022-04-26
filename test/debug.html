@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="bookmark" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="../dist/map2d/zgis2d-2.0.css" rel="stylesheet">
+
+    <title>二维GIS</title>
+
+    <style>
+        #root {
+            width: 100%;
+            height: 100%;
+        }
+
+        .citySelector {
+            top: 10px;
+            left: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zgis2d zgis-loading">
+        <div class="zgis-spinner1">
+            <div class="zgis-double-bounce1"></div>
+            <div class="zgis-double-bounce2"></div>
+        </div>
+    </div>
+    <div id="root"></div>
+    <div class="citySelector"></div>
+    <script src="../dist/map2d/zgis.lib2d.js"></script>
+    <script src=" ./data/echarts_data.js"> </script>
+    <script type="module" src="./debug.js"></script>
+</body>
+
+</html>

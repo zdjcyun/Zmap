@@ -1,0 +1,424 @@
+@font-face {
+  font-family: 'icongis';
+  src: url('res/fonts/icongis.eot?lybynr');
+  src: url('res/fonts/icongis.eot?lybynr#iefix') format('embedded-opentype'),
+    url('res/fonts/icongis.ttf?lybynr') format('truetype'),
+    url('res/fonts/icongis.woff?lybynr') format('woff'),
+    url('res/fonts/icongis.svg?lybynr#icongis') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icongis' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-identity:before {
+  content: "\e939";
+}
+
+.icon-2D-b:before {
+  content: "\e928";
+}
+
+.icon-3D-b:before {
+  content: "\e929";
+}
+
+.icon-add-b:before {
+  content: "\e92a";
+}
+
+.icon-cancel-fullscreen-b:before {
+  content: "\e92b";
+}
+
+.icon-edit-b:before {
+  content: "\e92c";
+}
+
+.icon-fullscreen-b:before {
+  content: "\e92d";
+}
+
+.icon-home-b:before {
+  content: "\e92e";
+}
+
+.icon-lookaround-position-b:before {
+  content: "\e92f";
+}
+
+.icon-measure-b:before {
+  content: "\e930";
+}
+
+.icon-minus-b:before {
+  content: "\e931";
+}
+
+.icon-compass-red .path1:before {
+  content: "\e932";
+}
+
+.icon-compass-red .path2:before {
+  content: "\e933";
+  margin-left: -1em;
+}
+
+.icon-compass-red .path3:before {
+  content: "\e934";
+  margin-left: -1em;
+}
+
+.icon-compass-red .path4:before {
+  content: "\e935";
+  margin-left: -1em;
+}
+
+.icon-compass-red .path5:before {
+  content: "\e936";
+  margin-left: -1em;
+}
+
+.icon-compass-red .path6:before {
+  content: "\e937";
+  margin-left: -1em;
+}
+
+.icon-compass-red .path7:before {
+  content: "\e938";
+  margin-left: -1em;
+}
+
+.icon-refresh:before {
+  content: "\e927";
+}
+
+.icon-rectangle:before {
+  content: "\e923";
+}
+
+.icon-circle:before {
+  content: "\e924";
+}
+
+.icon-polygon:before {
+  content: "\e925";
+}
+
+.icon-polyline:before {
+  content: "\e926";
+}
+
+.icon-legend:before {
+  content: "\e900";
+}
+
+.icon-file:before {
+  content: "\e022";
+}
+
+.icon-folder-close:before {
+  content: "\e117";
+}
+
+.icon-folder-open:before {
+  content: "\e118";
+}
+
+.icon-triangle-right:before {
+  content: "\e250";
+}
+
+.icon-triangle-left:before {
+  content: "\e251";
+}
+
+.icon-triangle-bottom:before {
+  content: "\e252";
+}
+
+.icon-triangle-top:before {
+  content: "\e253";
+}
+
+.icon-edit-contour-line:before {
+  content: "\e600";
+}
+
+.icon-edit-full-line:before {
+  content: "\e601";
+}
+
+.icon-edit-dotted-line:before {
+  content: "\e602";
+}
+
+.icon-edit-arrow-line:before {
+  content: "\e603";
+}
+
+.icon-edit-pure-color-plane:before {
+  content: "\e604";
+}
+
+.icon-edit-halo-line:before {
+  content: "\e605";
+}
+
+.icon-user:before {
+  content: "\e606";
+}
+
+.icon-spot-light-source:before {
+  content: "\e607";
+}
+
+.icon-point-light-source:before {
+  content: "\e608";
+}
+
+.icon-cancel-fullscreen:before {
+  content: "\e609";
+}
+
+.icon-users:before {
+  content: "\e60a";
+}
+
+.icon-edit:before {
+  content: "\e60b";
+}
+
+.icon-clip:before {
+  content: "\e60c";
+}
+
+.icon-baselayer:before {
+  content: "\e60d";
+}
+
+.icon-terrain:before {
+  content: "\e60e";
+}
+
+.icon-fullscreen:before {
+  content: "\e60f";
+}
+
+.icon-directional-light-source:before {
+  content: "\e610";
+}
+
+.icon-measure:before {
+  content: "\e611";
+}
+
+.icon-measure-height:before {
+  content: "\e612";
+}
+
+.icon-analysis:before {
+  content: "\e613";
+}
+
+.icon-measure-length:before {
+  content: "\e616";
+}
+
+.icon-measure-triangle:before {
+  content: "\e617";
+}
+
+.icon-expand:before {
+  content: "\e619";
+}
+
+.icon-fold:before {
+  content: "\e61c";
+}
+
+.icon-add:before {
+  content: "\e61d";
+}
+
+.icon-setting:before {
+  content: "\e61f";
+}
+
+.icon-home:before {
+  content: "\e620";
+}
+
+.icon-compass:before {
+  content: "\e621";
+}
+
+.icon-share:before {
+  content: "\e624";
+}
+
+.icon-save:before {
+  content: "\e625";
+}
+
+.icon-edit-gridview-plane:before {
+  content: "\e626";
+}
+
+.icon-edit-stripe-plane:before {
+  content: "\e627";
+}
+
+.icon-edit-wake-line:before {
+  content: "\e628";
+}
+
+.icon-districtNavi:before {
+  content: "\e901";
+}
+
+.icon-atmosphere:before {
+  content: "\e902";
+}
+
+.icon-watersurface:before {
+  content: "\e903";
+}
+
+.icon-frame-rate:before {
+  content: "\e904";
+}
+
+.icon-depth-test:before {
+  content: "\e905";
+}
+
+.icon-fog:before {
+  content: "\e906";
+}
+
+.icon-sunshine:before {
+  content: "\e907";
+}
+
+.icon-lookaround-position:before {
+  content: "\e908";
+}
+
+.icon-fly:before {
+  content: "\e909";
+}
+
+.icon-measure-surfacearea:before {
+  content: "\e90a";
+}
+
+.icon-measure-direction:before {
+  content: "\e90b";
+}
+
+.icon-measure-area:before {
+  content: "\e90c";
+}
+
+.icon-measure-surfacelength:before {
+  content: "\e90d";
+}
+
+.icon-statusbar:before {
+  content: "\e90e";
+}
+
+.icon-map-location:before {
+  content: "\e90f";
+}
+
+.icon-map-theme:before {
+  content: "\e910";
+}
+
+.icon-2D:before {
+  content: "\e911";
+}
+
+.icon-3D:before {
+  content: "\e912";
+}
+
+.icon-box:before {
+  content: "\e913";
+}
+
+.icon-clear:before {
+  content: "\e914";
+}
+
+.icon-feedback:before {
+  content: "\e915";
+}
+
+.icon-info:before {
+  content: "\e916";
+}
+
+.icon-layers:before {
+  content: "\e917";
+}
+
+.icon-map:before {
+  content: "\e918";
+}
+
+.icon-map-pin:before {
+  content: "\e919";
+}
+
+.icon-search:before {
+  content: "\e91a";
+}
+
+.icon-star:before {
+  content: "\e91b";
+}
+
+.icon-weizhi:before {
+  content: "\e91c";
+}
+
+.icon-x-circle:before {
+  content: "\e91d";
+}
+
+.icon-menu:before {
+  content: "\e91e";
+}
+
+.icon-minus:before {
+  content: "\e91f";
+}
+
+.icon-flyto:before {
+  content: "\e920";
+}
+
+.icon-lookaround:before {
+  content: "\e921";
+}
+
+.icon-flypath:before {
+  content: "\e922";
+}

@@ -1,0 +1,522 @@
+.zgis-widget {
+    position: absolute;
+    right: 6px;
+    bottom: 3px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.zgis-widget .shadow {
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2), 0 2px 6px 0 rgba(0, 0, 0, .19);
+    -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2), 0 2px 6px 0 rgba(0, 0, 0, .19);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2), 0 2px 6px 0 rgba(0, 0, 0, .19);
+}
+
+
+
+.zgis-widget-container {
+    /*display: flex;*/
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    overflow: hidden;
+    transition: background-color .45s linear;
+    -webkit-transition: background-color .45s linear;
+    -ms-transition: background-color .45s linear;
+    -moz-transition: background-color .45s linear;
+}
+
+.zgis-widget-btn {
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    bottom: auto;
+}
+
+.zgis-widget-btn.xl {
+    font-size: 24px;
+}
+
+.zgis-widget-btn.sm {
+    font-size: 16px;
+}
+
+.zwbtn-tran {
+    -webkit-font-smoothing: subpixel-antialiased;
+    /* transition: border .25s linear, color .25s linear, background-color .25s linear;
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    -ms-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    -moz-transition: border .25s linear, color .25s linear, background-color .25s linear; */
+    transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+}
+
+.zgis-widget-imgbtn {
+    cursor: pointer;
+    padding: 6px;
+}
+
+
+
+/*左下角工具按钮容器*/
+.zgis-widget-btoolbar-root {
+    position: absolute;
+    padding-left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+}
+
+.zgis-widget-btoolbar-root>div {
+    display: inline-block;
+}
+
+/* 版权 */
+.zgis-widget.zgis-widget-copyrightcontainer {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.zgis-widget.zgis-widget-copyrightcontainer .logo {
+    max-height: 24px;
+}
+
+/*数据源版权*/
+.zgis-widget.zgis-widget-datacertif {
+    position: relative;
+    margin-left: 3px;
+    bottom: auto;
+    right: auto;
+    font-size: 10px;
+}
+
+/*右下角工具按钮容器*/
+.zgis-widget-rtoolbar-root {
+    position: absolute;
+    right: 6px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 18px;
+    align-items: flex-end;
+    /* padding-top: 3px; */
+    /* overflow: hidden; */
+}
+
+/* 右边功能按钮 */
+.zgis-widget-rtoolbar-toolBtn {
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* 导航工具栏组件 */
+.zgis-widget.zgis-widget-navtool {
+    position: relative;
+    right: 0;
+    bottom: 3px;
+    width: 112px;
+    height: 180px;
+    z-index: 1;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn {
+    position: absolute;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.smBtn {
+    width: 32px;
+    height: 32px;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.compass {
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    font-size: 64px;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.location,
+.zgis-widget.zgis-widget-navtool .navBtn.sceneRotation {
+    left: 3px;
+    bottom: 0;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.switch23D {
+    left: 6px;
+    bottom: 40px;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.resetHome {
+    left: 38px;
+    /* top: 6px; */
+    bottom: 70px;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.fullscreen {
+    right: 0;
+    /* top: 3px; */
+    bottom: 78px;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.zoomout {
+    right: 0;
+    top: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.zgis-widget.zgis-widget-navtool .navBtn.zoomin {
+    right: 0;
+    top: 32px;
+    border-radius: 0 0 4px 4px;
+}
+
+
+/* 相机状态组件 */
+.zgis-widget.zgis-widget-camera {
+    right: 3px;
+    bottom: auto;
+    left: auto;
+}
+
+/* 鼠标实时坐标组件 */
+.zgis-widget.zgis-widget-mouseposition {
+    right: 120px;
+    bottom: auto;
+    left: auto;
+}
+
+/* 鼠标屏幕焦点*/
+.zgis-mousezoom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin-top: -23px;
+    margin-left: -23px;
+    pointer-events: none;
+    /*visibility: hidden;*/
+    display: none;
+    opacity: 0;
+    /*-webkit-transition: visibility 0s .2s,opacity .2s ease-in;*/
+    /*-moz-transition: visibility 0s .2s,opacity .2s ease-in;*/
+    /*transition: visibility 0s .2s,opacity .2s ease-in;*/
+}
+
+.zgis-mousezoom .zoomimg {
+    width: 36px;
+    height: 36px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY1BMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////80LMUcAAAAIHRSTlMAn4WncLE2xh8oZS9cPraWTBIZRYy9BAdV3wx90ufx+UQVIrEAAAJ6SURBVEjHlVbZtqsgDAVlEBEntM6a///Kk3i6brWV3mMe1IUZdsJOgLGA9BG7JyK+aZDymwZ9c0N5dBUTE0vc4y/aSRrLwpGB55Jn9X/UTZMXZTJ2BOkxmp7nUfJNf9JR9fuVFc+AjU7DaGRs6P2oXclbZ8Z9VeVxda2vtNhRCb0CyTYUZUf2jb6EpeaSohQbKQ/DstBb9zs+bS7S3fVTVBsab6q6rlXaorEk76n+QNW1lFsDsIjxEFWivcWP6IMpEVGheDo8SLbCovAtxXndtrhDE0DxmdoACzpJ3hLn6MBf6aPFBjlBOPHd5hUbZ9CX5OkBMixKfsx7QvMUNnu9QRwGLERz2PGRW9bNEGoBs1GI/vDbSsYcgApxJqYsEv5Km5g2gQ6SLIMVi8jLVwNjjSSEewwxobLdIyQmqUaF9jPhDMhjhn8Z+9I7lXqjVujDfaKhMcYqaw3jcRzLWct8A/EtwiylzKV8UorotoD/FuHszZgTzA/pBvo5dq+yRVTrImhgN3DIJn+gPZYWhuAYEsSNOn61XRUnzACUIYMWMNny2EORoNU2oI+sQTTTdFjysmMlhHZCE2tqeRqCErc531vrUyKglMW5Jj7vmFmh7S4GPxDLuvatWTgiRFC6vtDX6KZ4P5Fq7fefw7lUFQ6SFnsz+4zt52QfKhCrx2v0Dzh4UN/pi+7tadHmNB+jzClXCo7m67RPUXfZV7rcn/CStTH7kruut28nRPpwhR7Q9zLLtN7TyIPNXvP2t+3GJJLPMZS2zfjlCPKxFPtBUlIZKyskd98Puc41OY8UyyZmIy4j9ZeD1AlFTLDC3rkJFHevDncNbl9OQtefH8v2KKO9pP/DAAAAAElFTkSuQmCC');
+    background-size: 100% 100%;
+
+    animation-duration: 0.4s;
+    /* don't forget to set a duration! */
+}
+
+.zgis-mousezoom.show,
+.show {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    display: block !important;
+    opacity: 1;
+}
+
+.zgis-mousezoom.hide,
+.hide {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    display: none;
+    opacity: 0;
+}
+
+
+/* 图例组件 */
+.zgis-widget-legend {
+    left: 5px;
+    right: auto;
+    bottom: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100px;
+    min-height: 36px;
+    line-height: 26px;
+}
+
+
+.zgis-widget-legend .zwl-title {
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-align: center;
+    width: 100%;
+}
+
+.zgis-widget-legend .zwl-content {
+    padding: 3px;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+}
+
+.zgis-widget-legend .zwl-content .zwl-layername {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+.zgis-widget-legend .zwl-content .zwl-layersymbol .zwl-ls-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 6px;
+}
+
+
+
+.zgis-widget-legend .zwl-content .zwl-ls-icon {
+    margin-right: 6px;
+    max-width: 64px;
+    max-height: 64px;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+.zgis-widget-legend .zwl-content .zwl-ls-icon.icon-normal {
+    width: 20px;
+}
+
+.zgis-widget-legend .zwl-content .zwl-ls-icon.color-normal {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.zgis-widget-legend .zwl-content .zwl-ls-title {
+    margin-right: 10px;
+}
+
+.zgis-widget-legend .zwl-content .zwl-ls-total {
+    font-weight: 400;
+    float: right;
+    margin-right: 3px;
+}
+
+
+/* 比例尺组件 */
+
+.zgis-widget-scalebar {
+    user-select: none;
+    position: relative;
+    height: 100%;
+    bottom: 0;
+    left: 10px;
+    max-height: 24px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.zgis-widget-scalebar-line {
+    font-weight: lighter;
+    border: 1px solid #eee;
+    border-top: none;
+    color: #eee;
+    font-size: 10px;
+    text-align: center;
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+
+.zgis-widget-scalebar-label {
+    text-align: center;
+    transition: all .3s;
+}
+
+
+@media print {
+    .zgis-widget-scalebar {
+        display: none;
+    }
+}
+
+/* Don't display the distance legend on small screens like mobile phones.*/
+@media screen and (max-width: 700px),
+screen and (max-height: 420px) {
+    .zgis-widget-scalebar {
+        display: none;
+    }
+}
+
+
+/* 工具提示部件 */
+.zgis-widget-tooltip {
+    position: absolute;
+    pointer-events: none;
+    height: fit-content;
+    width: fit-content;
+    padding: 1px 1px 1px 10px;
+    font-size: 1em;
+    z-index: 1000;
+    opacity: 0.8;
+    -khtml-opacity: 0.8;
+    -moz-opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.zgis-widget-tooltip.left .tooltipdiv-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #000000;
+}
+
+.zgis-widget-tooltip.right .tooltipdiv-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid #000000;
+}
+
+.zgis-widget-tooltip .tooltipdiv-inner {
+    padding: 3px 8px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.zgis-widget-tooltip .tooltipdiv-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+/* 绘图\测量\拾取工具小部件 */
+.zgis-widget-drawtool,
+.zgis-widget-measuretool,
+.zgis-widget-distributetool,
+.zgis-widget-identitytool {
+    position: relative;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+}
+
+
+
+.zgis-widget-drawtool .content-container,
+.zgis-widget-measuretool .content-container,
+.zgis-widget-distributetool .content-container {
+    /* 默认先隐藏，hover状态再打开flex */
+    display: none;
+    flex: 1;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    min-width: 260px;
+}
+
+.zgis-widget-drawtool .content-container .header,
+.zgis-widget-measuretool .content-container .header,
+.zgis-widget-distributetool .content-container .header {
+    position: relative;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.zgis-widget-drawtool .content-container .header .header-title,
+.zgis-widget-measuretool .content-container .header .header-title,
+.zgis-widget-distributetool .content-container .header .header-title {
+    margin-left: 5px;
+    font-size: 18px;
+    width: 100%;
+    line-height: 48px;
+}
+
+.zgis-widget-drawtool .content-container .header .header-close,
+.zgis-widget-measuretool .content-container .header .header-close,
+.zgis-widget-distributetool .content-container .header .header-close {
+    width: 48px;
+    height: 100%;
+}
+
+
+.zgis-widget-drawtool .content-container .drawtool-content-btn,
+.zgis-widget-measuretool .content-container .measuretool-content-btn,
+.zgis-widget-distributetool .content-container .distributetool-content-btn {
+    width: 64px;
+    padding: 8px;
+    display: inline-flex;
+}
+
+.zgis-widget-drawtool .content-container .drawtool-content-btn span,
+.zgis-widget-measuretool .content-container .measuretool-content-btn span,
+.zgis-widget-distributetool .content-container .distributetool-content-btn span {
+    font-size: 0.8em;
+}
+
+.zgis-widget-drawtool .content-container .drawtool-content-btn i,
+.zgis-widget-measuretool .content-container .measuretool-content-btn i,
+.zgis-widget-distributetool .content-container .distributetool-content-btn i {
+    font-size: 1.2em;
+}
+
+
+.zgis-widget-drawtool .drawtool-btn,
+.zgis-widget-measuretool .measuretool-btn,
+.zgis-widget-distributetool .distributetool-btn,
+.zgis-widget-identitytool .identitytool-btn {
+    position: relative;
+    padding: 7px;
+}
+
+

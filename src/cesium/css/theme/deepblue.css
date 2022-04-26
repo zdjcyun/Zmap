@@ -1,0 +1,122 @@
+.zgis-theme-deepblue .zgis-widget-btn {
+    color: #f1f1f1;
+}
+
+.zgis-theme-deepblue .zgis-widget-btn.selection {
+    color: #00b1b1;
+    background: rgba(4, 25, 43, 1);
+}
+
+.zgis-theme-deepblue .zgis-widget-btn:hover {
+    background: #3c556d;
+}
+
+
+
+/*底部工具栏*/
+.zgis-widget-btoolbar-root.zgis-theme-deepblue {
+    color: #DEDEDE;
+    background-color: rgba(10, 36, 47, 0.7);
+}
+
+/*右下角导航工具*/
+
+.zgis-widget.zgis-widget-navtool.zgis-theme-deepblue .navBtn {
+    background: rgba(10, 36, 47, 0.8) none;
+    color: #f1f1f1;
+}
+
+.zgis-widget.zgis-widget-navtool.zgis-theme-deepblue .navBtn:hover {
+    background-color: #3c556d;
+    color: #ffffff;
+}
+
+.zgis-widget.zgis-widget-message.zgis-theme-deepblue .zwm-msg.error {
+    color: #ff2828;
+}
+
+
+
+/*图例*/
+
+.zgis-widget-legend.zgis-theme-deepblue .zwl-title {
+    background-color: rgba(10, 36, 47, 0.7);
+    border-bottom: 1px solid rgba(98, 98, 98, 1);
+}
+
+.zgis-widget-legend.zgis-theme-deepblue .zwl-content {
+    background-color: rgba(10, 36, 47, 0.5);
+}
+
+.zgis-widget-legend .zwl-content .zwl-layername:hover,
+.zgis-widget-legend .zwl-content .zwl-layersymbol .zwl-ls-content:hover {
+    background-color: rgba(10, 36, 47, 0.5);
+}
+
+/* 比例尺 */
+.zgis-widget-scalebar.zgis-theme-deepblue {
+    background: rgba(10, 36, 47, 0.3);
+}
+
+/* 绘图工具 */
+.zgis-widget-drawtool.zgis-theme-deepblue .drawtool-btn {
+    background: rgba(10, 36, 47, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-deepblue .drawtool-btn:hover {
+    background-color: #3c556d;
+    color: #fff;
+}
+
+.zgis-widget-drawtool.zgis-theme-deepblue .content-container {
+    background: rgba(10, 36, 47, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-deepblue .content-arrow {
+    border-color: transparent transparent transparent rgb(218, 218, 218);
+}
+
+/* 量测工具 */
+.zgis-widget-measuretool.zgis-theme-deepblue .measuretool-btn {
+    background: rgba(10, 36, 47, 0.8);
+}
+
+.zgis-widget-measuretool.zgis-theme-deepblue .measuretool-btn:hover {
+    background-color: #3c556d;
+    color: #fff;
+}
+
+.zgis-widget-measuretool.zgis-theme-deepblue .content-container {
+    background: rgba(10, 36, 47, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-deepblue .content-container .header,
+.zgis-widget-measuretool.zgis-theme-deepblue .content-container .header {
+    background: rgba(10, 36, 47, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-deepblue .content-container .header .header-close:hover,
+.zgis-widget-measuretool.zgis-theme-deepblue .content-container .header .header-close:hover {
+    background-color: #3c556d;
+    color: #fff;
+}
+
+.zgis-widget-drawtool.zgis-theme-deepblue .drawtool-content-btn.active,
+.zgis-widget-measuretool.zgis-theme-deepblue .measuretool-content-btn.active {
+    color: #00b1b1;
+}
+
+.icon-compass-red .path6:before {
+    color: rgb(236, 95, 31);
+}
+
+
+/* 拾取工具 */
+.zgis-widget-identitytool.zgis-theme-deepblue .identitytool-btn {
+    background: rgba(10, 36, 47, 0.8);
+}
+
+.zgis-widget-identitytool.zgis-theme-deepblue .identitytool-btn:hover {
+    background-color: #3c556d;
+    color: #fff;
+}

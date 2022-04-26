@@ -1,0 +1,92 @@
+<!--
+ * @Author: gisboss
+ * @Date: 2020-08-21 15:05:35
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-04-26 14:15:09
+ * @Description: file content
+-->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="bookmark" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- <link href="../dist/map3d/zgis.lib3d.css" rel="stylesheet" />
+  <link href="../dist/map3d/zgis.map3d.min.css" rel="stylesheet" />
+  <link href="../libs/cesium178/Widgets/widgets.css" rel="stylesheet" />
+  <link href="../libs/videojs/video-js.min.css" rel="stylesheet"> -->
+  <title>三维GIS</title>
+
+  <style>
+    #root3d {
+      width: 100%;
+      height: 100%;
+    }
+
+    .url-container {
+      margin: 10px;
+    }
+
+    input {
+      line-height: 24px;
+      width: 800px;
+      font-size: large;
+    }
+
+    button {
+      font-size: large;
+    }
+
+    #myVideoElement {
+      min-width: 300px;
+      max-width: 100%;
+      min-height: 150px;
+    }
+
+    .vjs-big-play-button {
+      top: calc(50% - 0.8em) !important;
+      left: calc(50% - 1.5em) !important;
+    }
+  </style>
+</head>
+
+<!-- 文件被拖拽时不会打开一个新页面 -->
+<body οndragstart="return false">
+  <!--等待提示-->
+  <div class="zgis3d zgis-loading">
+    <div class="zgis-spinner1">
+      <div class="zgis-double-bounce1"></div>
+      <div class="zgis-double-bounce2"></div>
+    </div>
+  </div>
+  <div id="root3d">
+    <!-- <div><button id="btnDistribute">布点</button><button id="btnClearDistribute">清除</button></div> -->
+  </div>
+  <!--
+    <script src="./data/echarts_data.js"></script>
+     <script src="../libs/echarts/echarts.min.js"></script> -->
+  <!-- <script src="../dist/map3d/zgis.lib3d.js"></script> -->
+  <!-- <script src="../libs/mapv/mapv.js"></script> -->
+  <!-- <script src="../libs/openlayers/ol.js"></script> -->
+  <!-- <script src="../libs/filesaver/FileSaver.min.js"></script> -->
+  <!-- <script src="../libs/pako_inflate.js"></script> -->
+  <script src="debug3d.js" type="module"></script>
+  <!-- <script src="ys-config.js" type="module"></script> -->
+
+  <video id="myVideo" autoplay="true" loop="true" controls crossorigin muted style="display: none">
+    <source type=" video/mp4" src="http://113.247.236.85:8180/gis/gisserver/video/pinjie.mp4">
+    <!-- <source src="http://113.247.236.85:18037/rtp/gb_play_34020000001320000001_34020000001320000001.flv"
+      type="video/flv" /> -->
+    <!-- <source src="http://113.247.236.85:8180/gis/gisserver/video/test/big-buck-bunny_trailer.webm" type="video/webm" />
+    <source src="http://113.247.236.85:8180/gis/gisserver/video/test/big-buck-bunny_trailer.mp4" type="video/mp4" />
+    <source src="http://113.247.236.85:8180/gis/gisserver/video/test/big-buck-bunny_trailer.mov" 
+    type="video/quicktime" /> -->
+    Your browser does not support the <code>video</code> element.
+  </video>
+
+
+
+</body>
+
+</html>

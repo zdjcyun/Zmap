@@ -1,0 +1,142 @@
+.zgis-theme-dark .zgis-widget-btn {
+    color: #f1f1f1;
+}
+
+.zgis-theme-dark .zgis-widget-btn.selection {
+    color: #00b1b1;
+    background-color: rgba(28, 28, 28, 1);
+}
+
+.zgis-theme-dark .zgis-widget-btn:hover {
+    background: #2b3e50;
+    /*background-color: rgba(38, 38, 38, 0.75);*/
+}
+
+
+
+/*底部工具栏*/
+.zgis-widget-btoolbar-root.zgis-theme-dark {
+    color: #DEDEDE;
+    background-color: rgba(38, 38, 38, 0.7);
+}
+
+/*右下角导航工具*/
+
+.zgis-widget.zgis-widget-navtool.zgis-theme-dark .navBtn {
+    background: rgba(38, 38, 38, 0.8) none;
+    color: #f1f1f1;
+}
+
+.zgis-widget.zgis-widget-navtool.zgis-theme-dark .navBtn:hover {
+    background-color: #2b3e50;
+    color: #FFFFFF;
+}
+
+
+/*图例*/
+.zgis-widget-legend {
+    color: #eee;
+}
+
+.zgis-widget-legend.zgis-theme-dark .zwl-title {
+    background-color: rgba(38, 38, 38, 0.7);
+    border-bottom: 1px solid rgba(98, 98, 98, 1);
+}
+
+.zgis-widget-legend.zgis-theme-dark .zwl-content {
+    background-color: rgba(38, 38, 38, 0.5);
+}
+
+.zgis-widget-legend .zwl-content .zwl-layername:hover,
+.zgis-widget-legend .zwl-content .zwl-layersymbol .zwl-ls-content:hover {
+    background-color: rgba(38, 38, 38, 0.5);
+}
+
+
+/* 比例尺 */
+.zgis-widget-scalebar.zgis-theme-dark {
+    background: rgba(38, 38, 38, 0.3);
+}
+
+/* 绘图工具 */
+.zgis-widget-drawtool.zgis-theme-dark .drawtool-btn {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-dark .drawtool-btn:hover {
+    background-color: #2b3e50;
+    color: #fff;
+}
+
+.zgis-widget-drawtool.zgis-theme-dark .content-container {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-dark .content-arrow {
+    border-color: transparent transparent transparent rgb(218, 218, 218);
+}
+
+/* 布点工具 */
+.zgis-widget-distributetool.zgis-theme-dark .distributetool-btn {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-distributetool.zgis-theme-dark .distributetool-btn:hover {
+    background-color: #2b3e50;
+    color: #fff;
+}
+
+.zgis-widget-distributetool.zgis-theme-dark .content-container {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-distributetool.zgis-theme-dark .content-arrow {
+    border-color: transparent transparent transparent rgb(218, 218, 218);
+}
+
+/* 量测工具 */
+.zgis-widget-measuretool.zgis-theme-dark .measuretool-btn {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-measuretool.zgis-theme-dark .measuretool-btn:hover {
+    background-color: #2b3e50;
+    color: #fff;
+}
+
+.zgis-widget-measuretool.zgis-theme-dark .content-container {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-dark .content-container .header,
+.zgis-widget-measuretool.zgis-theme-dark .content-container .header {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-drawtool.zgis-theme-dark .content-container .header .header-close:hover,
+.zgis-widget-measuretool.zgis-theme-dark .content-container .header .header-close:hover {
+    background-color: #2b3e50;
+    color: #fff;
+}
+
+
+.zgis-widget-drawtool.zgis-theme-dark .drawtool-content-btn.active,
+.zgis-widget-measuretool.zgis-theme-dark .measuretool-content-btn.active {
+    color: #00b1b1;
+}
+
+
+.icon-compass-red .path6:before {
+    color: rgb(236, 95, 31);
+}
+
+
+/* 拾取工具 */
+.zgis-widget-identitytool.zgis-theme-dark .identitytool-btn {
+    background: rgba(38, 38, 38, 0.8);
+}
+
+.zgis-widget-identitytool.zgis-theme-dark .identitytool-btn:hover {
+    background-color: #2b3e50;
+    color: #fff;
+}
